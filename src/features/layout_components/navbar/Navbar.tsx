@@ -6,7 +6,7 @@ import BurgerMenu from "./BurgerMenu"
 
 interface Props {}
 
-const Navbar = (props: Props) => {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
