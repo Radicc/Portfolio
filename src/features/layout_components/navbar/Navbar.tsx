@@ -1,10 +1,8 @@
 import { useState } from "react"
 import OpenNavbar from "./OpenNavbar"
-import css from "./navbar.module.css"
-
 import BurgerMenu from "./BurgerMenu"
 
-interface Props {}
+import css from "./navbar.module.css"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
