@@ -2,7 +2,7 @@ import Page1noUpload from "./Page1noUpload.jpg"
 import Page1Upload from "./Page1Upload.jpg"
 import Page2 from "./Page2.jpg"
 import Page3 from "./Page3.jpg"
-import Page4 from "./Page4.jpg"
+import Page4 from "./page4.jpg"
 import Page5 from "./Page5.jpg"
 
 export const KalkulioIMGs = [
