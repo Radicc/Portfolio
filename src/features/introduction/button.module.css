@@ -1,0 +1,9 @@
+.container {
+  @apply text-2xl font-extrabold text-gray-800 mx-3 px-5 py-2 bg-green-500 rounded-lg cursor-pointer;
+  @apply hover:bg-green-400  hover:text-gray-950 hover:underline hover:shadow-lg hover:shadow-green-500/50;
+}
+@media (max-width: 700px) {
+  .container {
+    @apply text-lg mx-1;
+  }
+}

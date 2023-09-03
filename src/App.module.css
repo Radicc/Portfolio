@@ -1,0 +1,6 @@
+* {
+  @apply scroll-smooth font-Chakra;
+}
+html {
+  @apply bg-gray-900;
+}

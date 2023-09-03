@@ -1,0 +1,54 @@
+.container {
+  @apply flex flex-col items-center py-20 h-screen w-full bg-gray-800;
+}
+.title {
+  @apply py-10 text-8xl text-green-500 font-semibold;
+}
+.formWrapper {
+  @apply flex flex-col gap-6 bg-gray-900 py-5 px-16 rounded-2xl;
+  input {
+    @apply w-96 h-11 px-3 rounded-md;
+  }
+  textarea {
+    @apply h-48 w-96 px-3 rounded-md p-3;
+  }
+  h2 {
+    @apply text-green-500 font-medium text-2xl pb-1;
+  }
+  button {
+    @apply font-bold text-2xl py-2 px-6 bg-green-500 rounded-lg;
+    @apply hover:bg-green-400  hover:text-gray-950 hover:underline hover:shadow-lg hover:shadow-green-500/50;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    @apply py-0;
+  }
+  .title {
+    @apply flex 
+    items-end h-1/4 text-6xl p-3;
+  }
+  .formWrapper {
+    @apply flex w-full h-3/4 justify-center items-center flex-col gap-1 bg-gray-900 p-0 rounded-none;
+    div {
+      @apply relative w-full px-10 py-0;
+      height: 15%;
+    }
+    input {
+      @apply w-full h-1/2 px-3 rounded-md;
+    }
+    .messageWrapper {
+      @apply h-1/4;
+    }
+    textarea {
+      @apply w-full h-4/5 px-3 rounded-md p-3;
+    }
+    h2 {
+      @apply text-green-500 font-medium text-2xl pb-1;
+    }
+    button {
+      @apply font-bold text-2xl py-2 my-7 px-6 bg-green-500 rounded-lg;
+      @apply hover:bg-green-400  hover:text-gray-950 hover:underline hover:shadow-lg hover:shadow-green-500/50;
+    }
+  }
+}

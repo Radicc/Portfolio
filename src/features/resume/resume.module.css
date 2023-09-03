@@ -1,0 +1,50 @@
+.container {
+  @apply flex flex-col justify-center text-center h-screen py-10 bg-gray-900;
+}
+.title {
+  @apply pt-10 text-8xl text-green-500 font-semibold;
+}
+.blockWrapper {
+  @apply flex justify-center;
+}
+.resumeWrapper {
+  @apply relative flex flex-col items-center gap-5;
+
+  a {
+    @apply flex flex-col items-center cursor-default;
+    img {
+      @apply w-4/6 cursor-pointer z-20;
+      @apply hover:opacity-60 hover:z-0;
+    }
+  }
+
+  .iconDownload {
+    @apply absolute bg-slate-50 rounded-lg p-2 text-gray-900 top-1/2 z-10 pointer-events-none;
+  }
+
+  h1 {
+    @apply text-5xl text-green-500 underline;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    @apply gap-5;
+  }
+  .title {
+    @apply pt-0 text-6xl;
+  }
+  .blockWrapper {
+    @apply flex-col;
+  }
+  .resumeWrapper {
+    @apply gap-0;
+    a {
+      img {
+        @apply w-1/2 p-2;
+      }
+    }
+    h1 {
+      @apply text-2xl text-green-500 underline;
+    }
+  }
+}
