@@ -13,9 +13,9 @@ const Projects = () => {
       {ProjectBoxes.map((project, i) => (
         <div
           key={project.id}
-          className={`${css.projectWrapper}  ${i % 2 != 0 && "bg-gray-900"}`}
+          className={`${css.projectWrapper} ${i % 2 != 0 && "bg-gray-900"}`}
         >
-          <div className={`${css.infoWrapper} `}>
+          <div className={`${css.infoWrapper} ${i % 2 != 0 && "order-2"}`}>
             <h1>{project.name}</h1>
             <div className={css.galleryMobileWrapper}>
               <ImageGallery items={project.items} />
@@ -47,5 +47,4 @@ const Projects = () => {
     </div>
   )
 }
-//${i % 2 != 0 && "order-2"}
 export default Projects
