@@ -21,7 +21,7 @@
 @media (max-width: 700px) {
   .container {
     @apply gap-0 flex-col p-5;
-    background-image: url("https://github.com/Radicc/portfolio/blob/main/src/_assets/jaja3.jpg");
+    background-image: url("../../_assets/jaja3.jpg");
   }
   .introductionWrapper {
     @apply order-1 w-full flex flex-col gap-5 text-gray-200;
