@@ -1,25 +1,32 @@
 .container {
-  @apply flex flex-col items-center bg-gray-800 gap-10 py-24;
+  @apply flex flex-col items-center bg-gray-800 gap-10 py-20;
 }
 .title {
-  @apply py-10 text-8xl text-green-500 font-semibold;
+  @apply text-7xl text-green-500 font-semibold;
+  @apply md:text-9xl;
 }
 
 .projectWrapper {
-  @apply h-full w-full flex flex-row justify-center items-center text-center p-5 gap-5;
-
+  @apply h-full w-full flex flex-row justify-center items-center text-center gap-5 py-4;
+  @apply lg:px-10;
   .infoWrapper {
-    @apply w-4/5;
+    @apply w-full p-2;
     h1 {
-      @apply text-6xl text-green-500;
+      @apply text-6xl text-green-500 py-3;
+      @apply md:text-8xl;
+      @apply lg:text-7xl;
     }
     p {
       @apply text-xl text-gray-200 mt-5;
+      @apply md:text-4xl;
+      @apply lg:text-2xl;
     }
     .logoWrapper {
-      @apply flex justify-center gap-5 my-5;
+      @apply flex justify-center gap-4 my-5;
       img {
-        @apply w-14 drop-shadow-2xl shadow-slate-900;
+        @apply w-11 drop-shadow-2xl shadow-slate-900;
+        @apply md:w-20;
+        @apply lg:w-14;
       }
     }
     span {
@@ -27,41 +34,11 @@
     }
   }
   .galleryWrapper {
-    @apply block w-full;
+    @apply hidden;
+    @apply lg:block;
   }
   .galleryMobileWrapper {
-    @apply hidden;
-  }
-}
-
-@media (max-width: 700px) {
-  .container {
-    @apply w-screen gap-5 py-0;
-  }
-  .title {
-    @apply text-7xl pt-20 pb-0;
-  }
-
-  .projectWrapper {
-    @apply flex-col gap-5;
-
-    .infoWrapper {
-      @apply w-full;
-      p {
-        @apply text-lg text-gray-200 mt-5;
-      }
-      .logoWrapper {
-        @apply flex justify-center gap-5 my-5;
-        img {
-          @apply w-10 drop-shadow-2xl shadow-slate-900;
-        }
-      }
-    }
-    .galleryWrapper {
-      display: none;
-    }
-    .galleryMobileWrapper {
-      @apply pt-5 block;
-    }
+    @apply block;
+    @apply lg:hidden;
   }
 }

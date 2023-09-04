@@ -1,25 +1,30 @@
 .container {
-  @apply flex flex-col justify-center items-center w-full h-screen p-1;
+  @apply flex flex-col justify-center items-center w-full h-full py-20;
   background-image: url("../../_assets/jaja3.jpg");
-  @apply lg:flex-row md:p-20 md:gap-20;
+  @apply md:gap-10 md:h-full md:bg-cover;
+  @apply lg:flex-row lg:px-10;
 }
 .introductionWrapper {
   @apply w-full flex flex-col justify-center items-center text-center gap-5 text-gray-200;
   @apply lg:w-4/6 md:gap-10;
   h1 {
     @apply text-2xl;
-    @apply md:text-4xl;
+    @apply md:text-5xl;
+    @apply lg:text-4xl;
   }
   h2 {
     @apply text-3xl text-green-400;
-    @apply md:text-6xl;
+    @apply md:text-7xl;
+    @apply lg:text-6xl;
   }
   p {
     @apply text-xl;
-    @apply md:text-2xl;
+    @apply md:text-3xl;
+    @apply lg:text-2xl;
   }
 }
 .profileAvatar {
   @apply p-10 w-2/3 rounded-full;
+  @apply md:w-7/12 md:m-5;
   @apply lg:w-4/12 lg:order-2;
 }

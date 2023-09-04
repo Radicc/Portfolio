@@ -1,54 +1,35 @@
 .container {
-  @apply flex flex-col items-center py-20 h-screen w-full bg-gray-800;
+  @apply flex flex-col justify-end items-center bg-gray-800;
+  @apply lg:p-5 lg:h-screen;
 }
 .title {
-  @apply py-10 text-8xl text-green-500 font-semibold;
+  @apply py-10 text-7xl text-green-500 font-semibold;
+  @apply md:text-8xl;
 }
 .formWrapper {
-  @apply flex flex-col gap-6 bg-gray-900 py-5 px-16 rounded-2xl;
+  @apply flex w-full flex-col gap-6 bg-gray-900 p-5;
+  @apply md:justify-center md:gap-12;
+  @apply lg:h-auto lg:w-auto lg:rounded-xl lg:items-center lg:gap-2 lg:px-12;
   input {
-    @apply w-96 h-11 px-3 rounded-md;
+    @apply w-full h-11 px-3 rounded-md;
+    @apply md:h-16;
+    @apply lg:w-96 lg:h-12;
   }
   textarea {
-    @apply h-48 w-96 px-3 rounded-md p-3;
+    @apply h-48 w-full px-3 rounded-md p-3;
+    @apply md:h-72;
+    @apply lg:w-96 lg:h-48;
   }
   h2 {
     @apply text-green-500 font-medium text-2xl pb-1;
+    @apply md:text-4xl md:pb-3;
+    @apply lg:text-3xl;
   }
   button {
     @apply font-bold text-2xl py-2 px-6 bg-green-500 rounded-lg;
     @apply hover:bg-green-400  hover:text-gray-950 hover:underline hover:shadow-lg hover:shadow-green-500/50;
-  }
-}
-@media (max-width: 700px) {
-  .container {
-    @apply py-0;
-  }
-  .title {
-    @apply flex 
-    items-end h-1/4 text-6xl p-3;
-  }
-  .formWrapper {
-    @apply flex w-full h-3/4 justify-center items-center flex-col gap-1 bg-gray-900 p-0 rounded-none;
-    div {
-      @apply relative w-full px-10 py-0;
-      height: 15%;
-    }
-    input {
-      @apply w-full h-1/2 px-3 rounded-md;
-    }
-    .messageWrapper {
-      @apply h-1/4;
-    }
-    textarea {
-      @apply w-full h-4/5 px-3 rounded-md p-3;
-    }
-    h2 {
-      @apply text-green-500 font-medium text-2xl pb-1;
-    }
-    button {
-      @apply font-bold text-2xl py-2 my-7 px-6 bg-green-500 rounded-lg;
-      @apply hover:bg-green-400  hover:text-gray-950 hover:underline hover:shadow-lg hover:shadow-green-500/50;
-    }
+
+    @apply md:text-4xl md:py-5;
+    @apply lg:text-2xl lg:py-2;
   }
 }

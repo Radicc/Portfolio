@@ -15,6 +15,7 @@ const Navbar = () => {
         </a>
         <BurgerMenu isOpen={isOpen} setIsOpen={(e) => setIsOpen(e)} />
       </div>
+      <BurgerMenu isOpen={isOpen} setIsOpen={(e) => setIsOpen(e)} />
       {isOpen && <OpenNavbar setIsOpen={(e) => setIsOpen(e)} />}
     </>
   )

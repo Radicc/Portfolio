@@ -25,7 +25,7 @@ const Resume = () => {
           <FaFileDownload size={"3rem"} className={css.iconDownload} />
           <a
             download="Tomáš_Radič-Frontend_Developer.pdf"
-            href="./src/_assets/resumePDF/Tomáš_Radič-Frontend_Developer.pdf"
+            href="../../_assets/resumePDF/Tomáš_Radič-Frontend_Developer.pdf"
           >
             <img src={resumeSVK} />
           </a>

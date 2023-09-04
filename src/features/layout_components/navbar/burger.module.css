@@ -1,7 +1,7 @@
 #navIcon2 {
   width: 60px;
   height: 45px;
-  position: absolute;
+  position: fixed;
   display: flex;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -12,9 +12,10 @@
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 
-  right: 7%;
-  top: 22%;
   cursor: pointer;
+  scale: 0.7;
+  @apply top-4 right-4 z-40;
+  @apply md:-scale-125;
 }
 
 #navIcon2 span {
@@ -61,6 +62,7 @@
 
 #navIcon2.open span:nth-child(1),
 #navIcon2.open span:nth-child(6) {
+  @apply bg-red-500;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
@@ -69,6 +71,7 @@
 
 #navIcon2.open span:nth-child(2),
 #navIcon2.open span:nth-child(5) {
+  @apply bg-red-500;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
@@ -103,10 +106,4 @@
 #navIcon2.open span:nth-child(6) {
   left: calc(50% - 5px);
   top: 29px;
-}
-
-@media (max-width: 700px) {
-  #navIcon2 {
-    @apply right-5 top-4 scale-75;
-  }
 }

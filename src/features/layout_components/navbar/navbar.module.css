@@ -1,8 +1,10 @@
 .container {
-  @apply h-20 w-full fixed flex bg-green-500 bg-opacity-90 backdrop-blur-sm z-40;
-  @apply md:h-32 lg:h-24;
+  @apply top-0 h-20 w-full fixed flex items-center bg-green-500 bg-opacity-90 backdrop-blur-sm z-30;
+  @apply md:h-32;
+  @apply lg:h-24;
 }
 .Radicc {
-  @apply font-bold px-6 py-4 text-5xl text-gray-900 drop-shadow-2xl;
-  @apply md:text-7xl md:py-6 lg:py-3;
+  @apply font-bold text-4xl px-5 text-gray-900 drop-shadow-2xl;
+  @apply md:text-7xl;
+  @apply lg:text-6xl;
 }

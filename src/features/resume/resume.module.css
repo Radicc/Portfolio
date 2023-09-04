@@ -1,11 +1,15 @@
 .container {
-  @apply flex flex-col justify-center text-center h-screen py-10 bg-gray-900;
+  @apply flex flex-col justify-center text-center py-10 bg-gray-900;
+  @apply md:h-full;
 }
 .title {
-  @apply pt-10 text-8xl text-green-500 font-semibold;
+  @apply text-7xl text-green-500 font-semibold py-10;
+  @apply md:text-9xl;
+  @apply lg:text-8xl;
 }
 .blockWrapper {
-  @apply flex justify-center;
+  @apply flex flex-col justify-center;
+  @apply md:flex-row;
 }
 .resumeWrapper {
   @apply relative flex flex-col items-center gap-5;
@@ -13,8 +17,11 @@
   a {
     @apply flex flex-col items-center cursor-default;
     img {
-      @apply w-4/6 cursor-pointer z-20;
+      @apply w-1/2 cursor-pointer z-20;
       @apply hover:opacity-60 hover:z-0;
+
+      @apply md:w-4/5;
+      @apply lg:w-3/5;
     }
   }
 
@@ -23,28 +30,8 @@
   }
 
   h1 {
-    @apply text-5xl text-green-500 underline;
-  }
-}
-@media (max-width: 700px) {
-  .container {
-    @apply gap-5;
-  }
-  .title {
-    @apply pt-0 text-6xl;
-  }
-  .blockWrapper {
-    @apply flex-col;
-  }
-  .resumeWrapper {
-    @apply gap-0;
-    a {
-      img {
-        @apply w-1/2 p-2;
-      }
-    }
-    h1 {
-      @apply text-2xl text-green-500 underline;
-    }
+    @apply text-4xl text-green-500 underline;
+    @apply md:text-6xl;
+    @apply lg:text-5xl;
   }
 }
