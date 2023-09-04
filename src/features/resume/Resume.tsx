@@ -25,7 +25,7 @@ const Resume = () => {
           <FaFileDownload size={"3rem"} className={css.iconDownload} />
           <a
             download="Tomáš_Radič-Frontend_Developer.pdf"
-            href="../../_assets/resumePDF/Tomáš_Radič-Frontend_Developer.pdf"
+            href="https://raw.githubusercontent.com/Radicc/portfolio/3bd3779f64202cc9fa051254d09658a340ba0fea/src/_assets/resumePDF/Tom%C3%A1%C5%A1_Radi%C4%8D-Frontend_Developer.pdf"
           >
             <img src={resumeSVK} />
           </a>
