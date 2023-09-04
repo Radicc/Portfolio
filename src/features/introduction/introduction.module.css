@@ -1,40 +1,25 @@
 .container {
-  @apply gap-20 flex justify-center items-center w-full h-screen p-20;
+  @apply flex flex-col justify-center items-center w-full h-screen p-1;
   background-image: url("../../_assets/jaja3.jpg");
+  @apply lg:flex-row md:p-20 md:gap-20;
 }
 .introductionWrapper {
-  @apply w-4/6 flex flex-col justify-center items-center text-center gap-5 text-gray-200;
+  @apply w-full flex flex-col justify-center items-center text-center gap-5 text-gray-200;
+  @apply lg:w-4/6 md:gap-10;
   h1 {
-    @apply text-4xl;
+    @apply text-2xl;
+    @apply md:text-4xl;
   }
   h2 {
-    @apply text-6xl text-green-400;
+    @apply text-3xl text-green-400;
+    @apply md:text-6xl;
   }
   p {
-    @apply text-2xl;
+    @apply text-xl;
+    @apply md:text-2xl;
   }
 }
 .profileAvatar {
-  @apply p-10 w-4/12 rounded-full;
-}
-
-@media (max-width: 700px) {
-  .container {
-    @apply gap-0 flex-col p-5;
-  }
-  .introductionWrapper {
-    @apply order-1 w-full flex flex-col gap-5 text-gray-200;
-    h1 {
-      @apply text-2xl;
-    }
-    h2 {
-      @apply text-3xl text-green-400;
-    }
-    p {
-      @apply text-lg;
-    }
-  }
-  .profileAvatar {
-    @apply p-10 w-9/12 rounded-full;
-  }
+  @apply p-10 w-2/3 rounded-full;
+  @apply lg:w-4/12 lg:order-2;
 }

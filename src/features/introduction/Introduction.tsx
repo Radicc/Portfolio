@@ -6,6 +6,7 @@ import css from "./introduction.module.css"
 const Introduction = () => {
   return (
     <div className={css.container}>
+      <img src={profileAvatar} className={css.profileAvatar} />
       <div className={css.introductionWrapper}>
         <h1>✌ Hi There! I'm Tomáš Radič</h1>
         <h2>A Frontend developer</h2>
@@ -21,7 +22,6 @@ const Introduction = () => {
           <Button text="Contact" href="#Contact" onClick={() => {}} />
         </div>
       </div>
-      <img src={profileAvatar} className={css.profileAvatar} />
     </div>
   )
 }

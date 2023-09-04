@@ -45,6 +45,15 @@ const OpenNavbar = (props: Props) => {
 
   return (
     <div className={css.container}>
+      <ul className={css.ulContainer}>
+        {listNav.map((item) => (
+          <li key={item}>
+            <a href={`#${item}`} onClick={() => closeNav()}>
+              {item}
+            </a>
+          </li>
+        ))}
+      </ul>
       <div className={css.containerSocial}>
         {socialList.map((social, i) => (
           <a
@@ -59,16 +68,6 @@ const OpenNavbar = (props: Props) => {
           </a>
         ))}
       </div>
-
-      <ul className={css.ulContainer}>
-        {listNav.map((item) => (
-          <li key={item}>
-            <a href={`#${item}`} onClick={() => closeNav()}>
-              {item}
-            </a>
-          </li>
-        ))}
-      </ul>
     </div>
   )
 }
