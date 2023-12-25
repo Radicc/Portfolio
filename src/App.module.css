@@ -3,4 +3,6 @@
 }
 html {
   @apply bg-gray-900;
+  @apply scrollbar-thin scrollbar-thumb-green-400
+  scrollbar-track-green-100;
 }

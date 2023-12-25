@@ -1,8 +1,8 @@
 #navIcon2 {
+  @apply flex lg:hidden;
   width: 60px;
   height: 45px;
   position: fixed;
-  display: flex;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -19,11 +19,12 @@
 }
 
 #navIcon2 span {
-  display: block;
+  @apply block bg-green-200;
+  @apply lg:hidden;
+
   position: absolute;
   height: 9px;
   width: 50%;
-  background: rgb(20, 20, 20);
   opacity: 1;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -62,7 +63,7 @@
 
 #navIcon2.open span:nth-child(1),
 #navIcon2.open span:nth-child(6) {
-  @apply bg-red-500;
+  @apply bg-red-400;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
@@ -71,7 +72,7 @@
 
 #navIcon2.open span:nth-child(2),
 #navIcon2.open span:nth-child(5) {
-  @apply bg-red-500;
+  @apply bg-red-400;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);

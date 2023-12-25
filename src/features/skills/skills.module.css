@@ -1,0 +1,16 @@
+.container {
+  @apply hidden;
+  @apply absolute lg:flex justify-center items-center gap-[2.5%] bottom-0 w-full bg-gray-950;
+  h1 {
+    @apply text-green-400 text-4xl  underline;
+  }
+  h2 {
+    @apply text-gray-200 text-2xl;
+  }
+  .logoesWrapper {
+    @apply flex justify-center items-center gap-4;
+    img {
+      @apply w-1/4;
+    }
+  }
+}

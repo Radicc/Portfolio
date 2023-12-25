@@ -1,6 +1,4 @@
-import GitHub from "../../../_assets/GitHub.png"
-import LinkedIN from "../../../_assets/linkedIN.png"
-import Mail from "../../../_assets/mail2.png"
+import github from "@/_assets/icons8-github-96.png"
 
 import css from "./openNavbar.module.css"
 
@@ -8,13 +6,13 @@ interface Props {
   setIsOpen: (e: boolean) => void
 }
 
-const socialList = [
+export const socialList = [
   {
     socialName: "GitHub",
     href: "https://github.com/Radicc",
     bgColor: "bg-gray-800",
     bgHover: "hover:bg-gray-700",
-    srcIMG: GitHub,
+    srcIMG: github,
     target: "_Blank",
   },
   {
@@ -22,20 +20,17 @@ const socialList = [
     href: "https://www.linkedin.com/in/tomas-radicc/",
     bgColor: "bg-blue-800",
     bgHover: "hover:bg-blue-700",
-    srcIMG: LinkedIN,
+    srcIMG: "https://img.icons8.com/fluency/96/linkedin.png",
     target: "_Blank",
-  },
-  {
-    socialName: "Mail",
-    href: "#Contact",
-    bgColor: "bg-green-700",
-    bgHover: "hover:bg-green-600",
-    srcIMG: Mail,
-    target: "",
   },
 ]
 
-const englishNav = ["Home", "Projects", "Resume", "Contact"]
+const englishNav = [
+  { id: "", text: "DOMOV" },
+  { id: "About", text: "O MNE" },
+  { id: "Projects", text: "PROJEKTY" },
+  { id: "Services", text: "SERVIS" },
+]
 const listNav = englishNav
 
 const OpenNavbar = (props: Props) => {
@@ -47,9 +42,9 @@ const OpenNavbar = (props: Props) => {
     <div className={css.container}>
       <ul className={css.ulContainer}>
         {listNav.map((item) => (
-          <li key={item}>
-            <a href={`#${item}`} onClick={() => closeNav()}>
-              {item}
+          <li key={item.id}>
+            <a href={`#${item.id}`} onClick={() => closeNav()}>
+              {item.text}
             </a>
           </li>
         ))}

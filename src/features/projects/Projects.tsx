@@ -9,7 +9,7 @@ import css from "./projects.module.css"
 const Projects = () => {
   return (
     <div id="Projects" className={css.container}>
-      <h1 className={css.title}>Projects</h1>
+      <h1 className={css.title}>PROJEKTY</h1>
       {ProjectBoxes.map((project, i) => (
         <div
           key={project.id}
@@ -26,18 +26,20 @@ const Projects = () => {
                 <img key={item.id} src={item.logo} />
               ))}
             </div>
-            <span>
+            <div className="py-5">
               {project.linkGitHub && (
                 <Button
                   text="GitHub"
                   onClick={() => window.open(project.linkGitHub)}
+                  className="border border-green-500 text-gray-300"
                 />
               )}
               <Button
                 text="Live"
                 onClick={() => window.open(project.linkWebsite)}
+                className="bg-green-500"
               />
-            </span>
+            </div>
           </div>
           <div className={css.galleryWrapper}>
             <ImageGallery items={project.items} />

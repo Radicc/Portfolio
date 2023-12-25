@@ -1,27 +1,34 @@
 import Button from "./Button"
-
-import profileAvatar from "../../_assets/TomasRadic.jpg"
+import Skills from "../skills/Skills"
 import css from "./introduction.module.css"
 
 const Introduction = () => {
   return (
-    <div className={css.container}>
-      <img src={profileAvatar} className={css.profileAvatar} />
+    <div id="" className={css.container}>
       <div className={css.introductionWrapper}>
-        <h1>✌ Hi There! I'm Tomáš Radič</h1>
-        <h2>A Frontend developer</h2>
-        <p>
-          Frontend-focused web developer based in Slovakia with a passion for
-          creating aesthetically pleasing and user-friendly websites.
-          Specializing in ReactJS library.
-        </p>
+        <div className="flex gap-2">
+          <h1 className={css.handEmoji}>✌</h1>
+          <h1>Dobrý deň, vitajte.</h1>
+        </div>
 
-        <div>
-          <Button text="Projects" href="#Projects" />
-          <Button text="Resume" href="#Resume" onClick={() => {}} />
-          <Button text="Contact" href="#Contact" onClick={() => {}} />
+        <h2>
+          A Frontend developer builds the front-end portion of websites and web
+          applications
+        </h2>
+        <div className={css.flexWrapper}>
+          <Button
+            text="Moja práca"
+            href="#Projects"
+            className={"bg-green-500"}
+          />
+          <Button
+            text="Pozri služby"
+            href="#Services"
+            className={"border border-green-500 text-gray-300"}
+          />
         </div>
       </div>
+      <Skills />
     </div>
   )
 }

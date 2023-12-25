@@ -3,19 +3,24 @@ import css from "./button.module.css"
 interface Props {
   text: string
   href?: string
+  className?: string
   onClick?: () => void
 }
 
-const Button = ({ text, href, onClick }: Props) => {
+const Button = (props: Props) => {
   return (
-    <a onClick={onClick} className={css.container} href={href}>
+    <a
+      onClick={props.onClick}
+      className={`${css.container} ${props.className}`}
+      href={props.href}
+    >
       <span></span>
       <span></span>
       <span></span>
       <span></span>
       <span></span>
       <span></span>
-      {text}
+      {props.text}
     </a>
   )
 }

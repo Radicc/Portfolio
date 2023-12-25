@@ -1,24 +1,40 @@
 .container {
-  @apply flex flex-col justify-center items-center w-full h-full py-20;
-  background-image: url("../../_assets/jaja3.jpg");
+  @apply flex flex-col justify-center items-center w-full h-full;
   @apply md:gap-10 md:h-full md:bg-cover;
   @apply lg:flex-row lg:px-10;
+  animation: 0.3s popUP ease-in-out;
+}
+@keyframes popUP {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.flexWrapper {
+  @apply flex flex-col gap-2;
+  @apply lg:flex-row lg:gap-0;
 }
 .introductionWrapper {
-  @apply w-full flex flex-col justify-center items-center text-center gap-5 text-gray-200;
+  @apply w-full h-screen flex flex-col justify-center items-center text-center gap-5 text-gray-200;
   @apply lg:w-4/6 md:gap-10;
+  .handEmoji {
+    animation: waving 1s ease-in-out;
+    animation-iteration-count: infinite;
+  }
   h1 {
     @apply text-2xl;
     @apply md:text-5xl;
-    @apply lg:text-4xl;
+    @apply lg:text-5xl;
   }
   h2 {
-    @apply text-3xl text-green-400;
+    @apply w-[85%] text-3xl text-green-400;
     @apply md:text-7xl;
-    @apply lg:text-6xl;
+    @apply lg:text-7xl;
   }
   p {
-    @apply text-xl;
+    @apply w-[70%] text-xl;
     @apply md:text-3xl;
     @apply lg:text-2xl;
   }
@@ -27,4 +43,16 @@
   @apply p-10 w-2/3 rounded-full;
   @apply md:w-7/12 md:m-5;
   @apply lg:w-4/12 lg:order-2;
+}
+
+@keyframes waving {
+  0% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
 }

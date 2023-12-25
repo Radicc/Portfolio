@@ -1,0 +1,25 @@
+.container {
+  @apply flex flex-col relative h-screen w-full;
+  @apply lg:flex-row;
+
+  img {
+    @apply w-full object-cover h-1/2;
+    @apply lg:w-[50%] lg:h-full;
+  }
+  .aboutTextWrapper {
+    @apply flex justify-center items-center w-full h-1/2 text-start;
+    @apply lg:w-[50%] lg:h-full;
+    span {
+      @apply flex flex-col gap-2 w-[80%];
+    }
+    h1 {
+      @apply text-2xl text-green-400 underline;
+    }
+    h2 {
+      @apply font-bold text-5xl text-gray-300;
+    }
+    p {
+      @apply text-xl text-gray-300;
+    }
+  }
+}

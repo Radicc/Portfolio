@@ -7,4 +7,5 @@ export default {
       Chakra: ["Chakra Petch", "sans-serif"],
     },
   },
+  plugins: [require("tailwind-scrollbar")({ nocompatible: true })],
 }

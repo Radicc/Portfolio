@@ -1,6 +1,7 @@
 .container {
-  @apply text-lg font-extrabold text-gray-800 mx-1 px-5 py-2 bg-green-500 rounded-lg cursor-pointer;
+  @apply text-lg font-bold text-gray-900 mx-1 px-10 py-3  rounded-sm cursor-pointer;
   @apply hover:bg-green-400  hover:text-gray-950 hover:underline hover:shadow-lg hover:shadow-green-500/50;
 
-  @apply md:text-4xl md:mx-3 lg:text-2xl;
+  @apply md:text-4xl md:mx-3;
+  @apply lg:text-2xl;
 }

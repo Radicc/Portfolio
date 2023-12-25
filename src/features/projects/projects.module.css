@@ -1,9 +1,10 @@
 .container {
-  @apply flex flex-col items-center bg-gray-800 gap-10 py-20;
+  @apply flex flex-col items-center bg-gray-800 gap-10;
 }
 .title {
-  @apply text-7xl text-green-500 font-semibold;
-  @apply md:text-9xl;
+  @apply text-7xl text-green-500 font-normal pt-[5%] pb-[2%];
+  @apply md:text-7xl;
+  @apply lg:text-8xl;
 }
 
 .projectWrapper {
