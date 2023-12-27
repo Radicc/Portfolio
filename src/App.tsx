@@ -3,8 +3,7 @@ import {
   LanguageValues,
   languageDropDown,
 } from "./features/languageDropDown/languageData"
-
-import { English, Slovak } from "./features/language"
+import { English, Language, Slovak } from "./features/language"
 
 import LanguageDropDown from "@/features/languageDropDown/LanguageDropDown"
 import Navbar from "./features/navbar/Navbar"
@@ -16,11 +15,22 @@ import Services from "./features/services/Services"
 import css from "./App.module.css"
 
 const App = () => {
-  const [values, setValues] = useState<LanguageValues[]>([languageDropDown[0]])
-  const [language, setLanguage] = useState(Slovak)
+  const currentLanguage = Number(
+    JSON.parse(localStorage.getItem("language") || "0")
+  )
+  const [values, setValues] = useState<LanguageValues[]>([
+    languageDropDown[currentLanguage],
+  ])
+  const [language, setLanguage] = useState<Language>(Slovak)
 
   useEffect(() => {
-    values[0].id === 2 ? setLanguage(English) : setLanguage(Slovak)
+    if (values[0].id === 2) {
+      setLanguage(English)
+      localStorage.setItem("language", JSON.stringify(values[0].id - 1))
+    } else {
+      setLanguage(Slovak)
+      localStorage.setItem("language", JSON.stringify(values[0].id - 1))
+    }
   }, [values])
 
   return (
@@ -30,7 +40,7 @@ const App = () => {
       <Introduction language={language.introduction} />
       <About language={language.about} />
       <Projects language={language.projects} />
-      <Services />
+      <Services language={language.services} />
     </div>
   )
 }

@@ -4,7 +4,7 @@ import "react-image-gallery/styles/css/image-gallery.css"
 import Button from "../introduction/Button"
 
 import css from "./projects.module.css"
-import { Projects } from "./projectData"
+import { Projects } from "./languageProjects"
 
 interface Props {
   language: Projects[]

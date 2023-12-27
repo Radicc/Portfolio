@@ -1,4 +1,4 @@
-import { skills } from "../projects/projectData"
+import { skills } from "../projects/languageProjects"
 import css from "./skills.module.css"
 
 const Skills = () => {
