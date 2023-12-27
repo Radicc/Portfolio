@@ -12,7 +12,7 @@
 }
 
 .ulContainer {
-  @apply relative flex w-full h-[60%] justify-center items-center flex-col gap-5;
+  @apply relative flex w-full h-[60%] pt-[10%] justify-center items-center flex-col gap-5;
   li {
     @apply text-6xl  text-green-600;
     @apply hover:text-green-400;

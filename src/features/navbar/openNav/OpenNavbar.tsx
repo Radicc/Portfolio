@@ -1,8 +1,11 @@
 import github from "@/_assets/icons8-github-96.png"
 
+import { NavOpen } from "../languageNav"
+
 import css from "./openNavbar.module.css"
 
 interface Props {
+  language: NavOpen
   setIsOpen: (e: boolean) => void
 }
 
@@ -25,14 +28,6 @@ export const socialList = [
   },
 ]
 
-const englishNav = [
-  { id: "", text: "DOMOV" },
-  { id: "About", text: "O MNE" },
-  { id: "Projects", text: "PROJEKTY" },
-  { id: "Services", text: "SERVIS" },
-]
-const listNav = englishNav
-
 const OpenNavbar = (props: Props) => {
   const closeNav = () => {
     props.setIsOpen(false)
@@ -41,9 +36,9 @@ const OpenNavbar = (props: Props) => {
   return (
     <div className={css.container}>
       <ul className={css.ulContainer}>
-        {listNav.map((item) => (
-          <li key={item.id}>
-            <a href={`#${item.id}`} onClick={() => closeNav()}>
+        {props.language.navigation.map((item, i) => (
+          <li key={i}>
+            <a href={`#${item.href}`} onClick={() => closeNav()}>
               {item.text}
             </a>
           </li>
@@ -58,7 +53,7 @@ const OpenNavbar = (props: Props) => {
             target={social.target}
             onClick={() => !social.target && closeNav()}
           >
-            <img className={css.imgSocial} src={social.srcIMG} />
+            <img className={css.imgSocial} src={social.srcIMG} alt="" />
             <p className={css.socialText}>{social.socialName}</p>
           </a>
         ))}

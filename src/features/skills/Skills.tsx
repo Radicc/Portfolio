@@ -6,10 +6,10 @@ const Skills = () => {
     <div className={css.container}>
       <h1>Skills:</h1>
       <div className={css.logoesWrapper}>
-        {skills.map((item) => (
-          <div className={css.logoesWrapper}>
+        {skills.map((item, i) => (
+          <div key={i} className={css.logoesWrapper}>
             <h2>{item.name}</h2>
-            <img src={item.srcIMG} />
+            <img src={item.srcIMG} alt="" />
           </div>
         ))}
       </div>

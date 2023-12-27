@@ -1,16 +1,20 @@
 import ImageGallery from "react-image-gallery"
 import "react-image-gallery/styles/css/image-gallery.css"
 
-import { ProjectBoxes } from "./projectData"
 import Button from "../introduction/Button"
 
 import css from "./projects.module.css"
+import { Projects } from "./projectData"
 
-const Projects = () => {
+interface Props {
+  language: Projects[]
+}
+
+const Projects = (props: Props) => {
   return (
     <div id="Projects" className={css.container}>
       <h1 className={css.title}>PROJEKTY</h1>
-      {ProjectBoxes.map((project, i) => (
+      {props.language.map((project, i) => (
         <div
           key={project.id}
           className={`${css.projectWrapper} ${i % 2 != 0 && "bg-gray-900"}`}
@@ -23,7 +27,7 @@ const Projects = () => {
             <p>{project.description}</p>
             <div className={css.logoWrapper}>
               {project.img.map((item) => (
-                <img key={item.id} src={item.logo} />
+                <img key={item.id} src={item.logo} alt="" />
               ))}
             </div>
             <div className="py-5">

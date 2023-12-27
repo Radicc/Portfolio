@@ -1,19 +1,23 @@
+import { About } from "./languageAbout"
+
 import css from "./about.module.css"
 
-const About = () => {
+interface Props {
+  language: About
+}
+
+const About = (props: Props) => {
   return (
     <div id="About" className={css.container}>
-      <img src="https://www.lokkeestudios.com/_astro/lokkee.c5c1cf05.webp" />
+      <img
+        src="https://www.lokkeestudios.com/_astro/lokkee.c5c1cf05.webp"
+        alt="Road"
+      />
       <div className={css.aboutTextWrapper}>
         <span>
-          <h1>O MNE</h1>
-          <h2>MOJA CESTA</h2>
-          <p>
-            Moje meno je Tomáš, zapálený freelancer z Malaciek, Slovensko,
-            prinášam vám webový vývoj a dizajn z budúcnosti. Moja odbornosť je
-            vývoj webových stránok a webových aplikácií na úrovni vrátane
-            úplných frontendových dizajnu.
-          </p>
+          <h1>{props.language.title}</h1>
+          <h2>{props.language.section}</h2>
+          <p>{props.language.aboutText}</p>
         </span>
       </div>
     </div>

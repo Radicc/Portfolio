@@ -26,8 +26,8 @@ const Services = () => {
             a high quality quote based on the scale of your vision!
           </p>
           <ul>
-            {dataList.Websites.map((item) => (
-              <li>
+            {dataList.Websites.map((item, i) => (
+              <li key={i}>
                 {item.isIncluded ? (
                   <FaCheckCircle />
                 ) : (
@@ -45,8 +45,8 @@ const Services = () => {
             There are no limits to your website vision ― Let's make it happen!
           </p>
           <ul>
-            {dataList.WebApps.map((item) => (
-              <li>
+            {dataList.WebApps.map((item, i) => (
+              <li key={i}>
                 {item.isIncluded ? (
                   <FaCheckCircle />
                 ) : (

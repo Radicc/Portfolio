@@ -1,0 +1,10 @@
+.container {
+  @apply absolute top-0 left-0 bg-green-300 border;
+  @apply top-[2.5%] left-[3%] z-20;
+}
+.dropDownWrapper {
+  @apply flex items-center justify-between text-gray-800 font-bold;
+  img {
+    @apply w-[30%];
+  }
+}
