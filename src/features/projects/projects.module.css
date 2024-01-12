@@ -36,10 +36,10 @@
   }
   .galleryWrapper {
     @apply hidden;
-    @apply lg:block;
+    @apply xl:block;
   }
   .galleryMobileWrapper {
     @apply block;
-    @apply lg:hidden;
+    @apply xl:hidden;
   }
 }

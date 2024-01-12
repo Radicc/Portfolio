@@ -3,8 +3,8 @@
   @apply lg:p-5;
 }
 .container {
-  @apply hidden;
-  @apply w-[70%] py-2 lg:grid grid-flow-col grid-cols-3 justify-center items-center text-center px-3 bg-[#06091880] bg-opacity-60 backdrop-blur-md rounded-full border border-gray-800;
+  @apply hidden w-[70%] py-2  grid-flow-col grid-cols-3 justify-center items-center text-center px-3 bg-[#06091880] bg-opacity-60 backdrop-blur-md rounded-full border border-gray-800;
+  @apply xl:grid;
 
   .NavSection {
     @apply text-xl text-green-200 text-start;

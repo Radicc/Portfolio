@@ -18,7 +18,8 @@
 }
 .introductionWrapper {
   @apply w-full h-screen flex flex-col justify-center items-center text-center gap-5 text-gray-200;
-  @apply lg:w-4/6 md:gap-10;
+  @apply md:gap-10;
+  @apply xl:w-4/6;
   .handEmoji {
     animation: waving 1s ease-in-out;
     animation-iteration-count: infinite;

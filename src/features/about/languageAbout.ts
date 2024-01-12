@@ -15,5 +15,5 @@ export const aboutSK = {
   section: "O mne",
   title: "Developer",
   aboutText:
-    "Moje meno je Tomáš, zapálený freelancer z Malaciek, Slovensko, prinášam vám webový vývoj a dizajn z budúcnosti. Moja odbornosť je vývoj webových stránok a webových aplikácií na úrovni vrátane úplných frontendových dizajnu.",
+    "Moje meno je Tomáš, zapálený freelancer z Malaciek, Slovensko, prinášam vám webový vývoj a dizajn z budúcnosti. Moja odbornosť je vývoj webových stránok a webových aplikácií vrátane úplných frontendových dizajnu.",
 }

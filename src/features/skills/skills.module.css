@@ -1,6 +1,6 @@
 .container {
-  @apply hidden;
-  @apply absolute lg:flex justify-center items-center gap-[2.5%] bottom-0 w-full bg-gray-950;
+  @apply hidden justify-center items-center gap-[2.5%] bottom-0 w-full bg-gray-950;
+  @apply xl:absolute xl:flex;
   h1 {
     @apply text-green-400 text-4xl  underline;
   }

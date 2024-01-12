@@ -1,6 +1,5 @@
 import { GameHubIMGs } from "../../_assets/GameHub/gameHub"
 import { ReasearchPlatformIMGs2 } from "@/_assets/researchPlatform2/reasearchPlatform2"
-import { ReasearchPlatformIMGs } from "../../_assets/reasearchPlatform/reasearchPlatform"
 import { KalkulioIMGs } from "../../_assets/kalkulio/kalkulio"
 
 import recoil from "@/_assets/recoil.png"
@@ -11,7 +10,6 @@ const tailwind = "https://img.icons8.com/color/96/tailwind_css.png"
 const chakra = "https://img.icons8.com/color/96/chakra-ui.png"
 const ts = "https://img.icons8.com/color/96/typescript.png"
 const reactLogo = "https://img.icons8.com/officel/96/react.png"
-const sassLogo = "https://img.icons8.com/color/96/sass.png"
 const recoilJS = recoil
 const vite = "https://img.icons8.com/fluency/96/vite.png"
 
@@ -45,6 +43,7 @@ interface Items {
 
 export const projectsENG = [
   {
+    id: 0,
     name: "Kalkulio",
     img: [
       { id: "1", logo: htmlLogo },
@@ -60,9 +59,9 @@ export const projectsENG = [
     items: KalkulioIMGs,
     linkWebsite: "https://www.kalkulio.com/",
     linkGitHub: "",
-    id: 0,
   },
   {
+    id: 1,
     name: "Research Platform 2",
     img: [
       { id: "1", logo: htmlLogo },
@@ -78,25 +77,10 @@ export const projectsENG = [
     items: ReasearchPlatformIMGs2,
     linkWebsite: "https://research-platform-9aef4.web.app/",
     linkGitHub: "https://github.com/Radicc/Research_Platform_2",
-    id: 1,
   },
-  {
-    name: "Research Platform",
-    img: [
-      { id: "1", logo: htmlLogo },
-      { id: "2", logo: sassLogo },
-      { id: "3", logo: ts },
-      { id: "4", logo: reactLogo },
-    ],
-    description:
-      "Free educative investment platform! Our mission is to empower individuals to take control of their financial future by providing them with the knowledge and tools they need to make informed investment decisions. Our platform offers a wide range of educational resources, including books, youtube channels, websites, and retirement calculator all designed to help you learn the basics of investing and grow your wealth. With our user-friendly interface, you’ll be well on your way to achieving your financial goals.",
 
-    items: ReasearchPlatformIMGs,
-    linkWebsite: "https://radicc.github.io/Research_Platform/",
-    linkGitHub: "https://github.com/Radicc/Research_Platform",
-    id: 2,
-  },
   {
+    id: 2,
     name: "GameHub",
     img: [
       { id: "1", logo: htmlLogo },
@@ -111,7 +95,6 @@ export const projectsENG = [
     items: GameHubIMGs,
     linkWebsite: "https://radicc.github.io/GameHub/",
     linkGitHub: "https://github.com/Radicc/GameHub",
-    id: 3,
   },
 ]
 
@@ -154,22 +137,6 @@ export const projectsSK = [
   },
   {
     id: 2,
-    name: "Research Platform",
-    img: [
-      { id: "1", logo: htmlLogo },
-      { id: "2", logo: sassLogo },
-      { id: "3", logo: ts },
-      { id: "4", logo: reactLogo },
-    ],
-    description:
-      "Bezplatná vzdelávacia investičná platforma! Naším poslaním je umožniť jednotlivcom prevziať kontrolu nad svojou finančnou budúcnosťou tým, že im poskytneme znalosti a nástroje, ktoré potrebujú na prijímanie informovaných investičných rozhodnutí. Naša platforma ponúka širokú škálu vzdelávacích zdrojov vrátane kníh, kanálov youtube, webových stránok a kalkulačky odchodu do dôchodku, ktoré sú navrhnuté tak, aby vám pomohli naučiť sa základy investovania a rozšíriť svoje bohatstvo. S naším užívateľsky prívetivým rozhraním budete na dobrej ceste k dosiahnutiu svojich finančných cieľov.",
-
-    items: ReasearchPlatformIMGs,
-    linkWebsite: "https://radicc.github.io/Research_Platform/",
-    linkGitHub: "https://github.com/Radicc/Research_Platform",
-  },
-  {
-    id: 3,
     name: "GameHub",
     img: [
       { id: "1", logo: htmlLogo },

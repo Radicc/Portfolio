@@ -1,3 +1,1 @@
-Portfolio: https://radicc.github.io/portfolio/
-
-Portfolio website.
+Portfolio Web: www.tomasradic.sk

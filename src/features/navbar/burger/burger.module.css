@@ -1,5 +1,5 @@
 #navIcon2 {
-  @apply flex lg:hidden;
+  @apply flex xl:hidden;
   width: 60px;
   height: 45px;
   position: fixed;
@@ -20,7 +20,7 @@
 
 #navIcon2 span {
   @apply block bg-green-200;
-  @apply lg:hidden;
+  @apply xl:hidden;
 
   position: absolute;
   height: 9px;
