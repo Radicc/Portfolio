@@ -75,7 +75,8 @@ export const projectsENG = [
       "Second version of free educative investment platform! Our mission is to empower individuals to take control of their financial future by providing them with the knowledge and tools they need to make informed investment decisions. Our platform offers a wide range of educational resources, including books, youtube channels, websites, and retirement calculator all designed to help you learn the basics of investing and grow your wealth. With our user-friendly interface, you’ll be well on your way to achieving your financial goals.",
 
     items: ReasearchPlatformIMGs2,
-    linkWebsite: "https://research-platform-9aef4.web.app/",
+    linkWebsite:
+      "http://investicna-platforma-front-end-bucket.s3-website.eu-central-1.amazonaws.com/StocksTools",
     linkGitHub: "https://github.com/Radicc/Research_Platform_2",
   },
 
