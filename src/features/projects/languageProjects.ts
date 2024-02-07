@@ -76,7 +76,7 @@ export const projectsENG = [
 
     items: ReasearchPlatformIMGs2,
     linkWebsite:
-      "http://investicna-platforma-front-end-bucket.s3-website.eu-central-1.amazonaws.com/StocksTools",
+      "http://investicna-platforma-front-end-bucket.s3-website.eu-central-1.amazonaws.com",
     linkGitHub: "https://github.com/Radicc/Research_Platform_2",
   },
 
@@ -133,7 +133,8 @@ export const projectsSK = [
       "Druhá verzia bezplatnej vzdelávacej investičnej platforme! Naším poslaním je umožniť jednotlivcom prevziať kontrolu nad svojou finančnou budúcnosťou tým, že im poskytneme znalosti a nástroje, ktoré potrebujú na prijímanie informovaných investičných rozhodnutí. Naša platforma ponúka širokú škálu vzdelávacích zdrojov vrátane kníh, kanálov youtube, webových stránok a kalkulačky odchodu do dôchodku, ktoré sú navrhnuté tak, aby vám pomohli naučiť sa základy investovania a rozšíriť svoje bohatstvo. S naším užívateľsky prívetivým rozhraním budete na dobrej ceste k dosiahnutiu svojich finančných cieľov.",
 
     items: ReasearchPlatformIMGs2,
-    linkWebsite: "https://research-platform-9aef4.web.app/",
+    linkWebsite:
+      "http://investicna-platforma-front-end-bucket.s3-website.eu-central-1.amazonaws.com",
     linkGitHub: "https://github.com/Radicc/Research_Platform_2",
   },
   {

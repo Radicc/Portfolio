@@ -1,4 +1,5 @@
 import { About } from "./languageAbout"
+import aboutIMG from "@/_assets/about.jpg"
 
 import css from "./about.module.css"
 
@@ -9,10 +10,7 @@ interface Props {
 const About = (props: Props) => {
   return (
     <div id="About" className={css.container}>
-      <img
-        src="https://www.lokkeestudios.com/_astro/lokkee.c5c1cf05.webp"
-        alt="Road"
-      />
+      <img src={aboutIMG} alt="Road" />
       <div className={css.aboutTextWrapper}>
         <span>
           <h1>{props.language.title}</h1>
